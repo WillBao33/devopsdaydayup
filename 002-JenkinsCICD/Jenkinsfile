@@ -2,7 +2,7 @@ pipeline {
     agent any 
     environment{
         registryUrlBase = "https://ghcr.io"
-        registryUrl = "ghcr.io/WillBao33/devopsdaydayup"
+        registryUrl = "ghcr.io/willbao33/devopsdaydayup"
         registryCredentialsId = 'github-token'
         commitID = sh(script: 'git rev-parse --short HEAD', returnStdout:true).trim()
         containerName = "color-web"
